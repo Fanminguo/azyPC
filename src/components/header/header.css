@@ -1,0 +1,509 @@
+
+/*
+top:-212.5px
+width:100%
+height:aito
+ */
+
+  body,
+  html {
+    /* position: relative; */
+    min-width: 1230px;
+    height: 100%;
+    width: 100%;
+    font-size: 0;
+  }
+
+  .memorial-day {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: grey;
+    filter: gray;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)
+  }
+  .clear:after {
+    content: "";
+    display: block;
+    clear: both
+  }
+
+  .video-wrap {
+    overflow: hidden;
+    background-color: #000
+  }
+
+  .video-wrap,
+  .video-wrap .mask,
+  .video-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+
+  .video-wrap .fade-in,
+  .video-wrap img {
+    -webkit-animation: fade-in 2s;
+    animation: fade-in 2s
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  .video-wrap .video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+
+  }
+
+  .video-wrap .mask,
+  .video-wrap .video {
+    background-color: rgba(0, 0, 0, 0)
+  }
+
+  .main-content-wrap {
+    position: absolute;
+    width: 100%
+  }
+
+  .main-content {
+    position: absolute;
+    left: 7.625%;
+    top: 62%
+  }
+
+  .main-content .azy-slogan {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+    line-height: 72px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5)
+  }
+
+  .main-content .btn-wrap,
+  .main-content .qr-code {
+    display: inline-block;
+    vertical-align: top
+  }
+
+  .main-content .qr-code {
+    width: 137px;
+    width: 8.5625vw;
+    margin: 0 2.1875vw 0 0;
+    text-align: center
+  }
+
+  .main-content .qr-code .image {
+    width: 100%;
+    height: 140px;
+    height: 8.75vw;
+    margin-bottom: 3px;
+    border-radius: 6px
+  }
+
+  .main-content .qr-code .text {
+    font-size: 12px;
+    line-height: 17px;
+    color: #d8d8d8
+  }
+
+  .main-content .btn-wrap .btn {
+    display: block;
+    width: 190px;
+    height: 58px;
+    width: 11.875vw;
+    height: 3.625vw;
+    background: none no-repeat 50%/contain;
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: background-image .3s;
+    -o-transition: background-image .3s;
+    transition: background-image .3s;
+    color: #fff;
+    font-size: 28px;
+    line-height: 58px
+  }
+
+  .main-content .btn-wrap .btn:first-child {
+    margin-bottom: 1.5vw
+  }
+
+  .main-content .btn-wrap .btn:before {
+    content: ""
+  }
+
+  .main-content .btn-wrap .ios {
+    background-image: url(https://www.aizhiyi.com/mobile/image/ios_normal.png)
+  }
+
+  .main-content .btn-wrap .ios:before,
+  .main-content .btn-wrap .ios:hover {
+    background-image: url(https://www.aizhiyi.com/mobile/image/ios_pressed_2.png)
+  }
+
+  .main-content .btn-wrap .android {
+    background-image: url(https://www.aizhiyi.com/mobile/image/android_normal.png)
+  }
+
+  .main-content .btn-wrap .android:before,
+  .main-content .btn-wrap .android:hover {
+    background-image: url(https://www.aizhiyi.com/mobile/image/android_normal2.png)
+  }
+
+  .header {
+    position: relative;
+    z-index: 2;
+    padding: 17px 5.875% 29px 7.625%;
+    height:30px;
+  }
+
+  .header .logo {
+    float: left;
+    width: 7.6875%;
+    height: 3.3125%;
+    cursor: pointer
+  }
+
+  .header .logo img {
+    width: 200%;
+    -o-object-fit: contain;
+    object-fit: contain
+  }
+
+.volumn1{
+  width: 34px;
+  float: right;margin: 10px 0 0 24px;
+}
+  .header .volumn {
+    width: 34px;
+    height: 20px;
+    margin: 10px 0 0 24px;
+    background-size: 100%;
+    background: none no-repeat 50%/contain;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer
+  }
+
+  .header .volumn:before {
+    content: "";
+    background-image: url(https://www.aizhiyi.com/mobile/image/muted_pressed_bg.png), url(https://www.aizhiyi.com/mobile/image/voice_normal.png), url(https://www.aizhiyi.com/mobile/image/voice_pressed_bg.png)
+  }
+
+  .header .volumn.muted {
+    background-image: url(https://www.aizhiyi.com/mobile/image/mute_normal.png)
+  }
+
+  .header .volumn.muted:hover {
+    background-image: url(https://www.aizhiyi.com/mobile/image/muted_pressed_bg.png)
+  }
+
+  .header .volumn.voice {
+    background-image: url(https://www.aizhiyi.com/mobile/image/voice_normal.png)
+  }
+
+  .header .volumn.voice:hover {
+    background-image: url(https://www.aizhiyi.com/mobile/image/voice_pressed_bg.png)
+  }
+
+  .header .list {
+    padding: 10px 0 0
+  }
+
+  .header .list .item {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px
+  }
+
+  .header .list .item:not(:first-child) {
+    margin-left: 3.125vw;
+  }
+
+  .header .list .item:first-child {
+    margin-left: 0
+  }
+
+  .header .list .item .nav {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    overflow: visible;
+    padding-bottom: 6px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    /* text-shadow: 0 2px 3px rgba(0, 0, 0, .5); */
+    -webkit-transition: border-color .3s ease-in;
+    -o-transition: border-color .3s ease-in;
+    transition: border-color .3s ease-in
+  }
+
+  .header .list .item .nav:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+    color: #000000;
+  }
+
+  .header .list .item .nav.checked:after {
+    background-color: #ff5000
+  }
+
+
+
+
+  .header .list .item .iconfont {
+    position: relative;
+    left: 4px;
+    color: #fff;
+    /* font-size: 12px */
+  }
+
+  .header .list .item:not(.sub-menu):hover .nav {
+    text-shadow: none
+  }
+
+  .header .list .item:not(.sub-menu):hover .nav:after {
+    background-color: #ff5000
+  }
+
+  .header .list .sub-menu .icon-nav-show {
+    display: inline-block;
+
+  }
+
+  .header .list .sub-menu .icon-nav-hide,
+  .header .list .sub-menu:hover .icon-nav-show {
+    display: none
+  }
+
+  .header .list .sub-menu:hover .icon-nav-hide {
+    display: inline-block
+  }
+
+  .header .list .sub-menu:hover .down-item {
+    display: block
+  }
+
+  .header .list .down-item {
+    position: absolute;
+    display: none;
+    width: 110px;
+    left: 0;
+    top: 26px;
+   border-radius:4px 4px 10px 10px;
+    background:rgba(0,0,0,0.5);
+  }
+
+  .header .list .down-item li:first-child {
+    padding-top: 10px
+  }
+
+  .header .list .down-item li:last-child {
+    padding-bottom: 10px
+  }
+
+  .header .list .down-item li div {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .36);
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s
+  }
+.header .list .down-item li div a{
+  color: #fff;
+}
+  .header .list .down-item li:hover>a {
+    color: #ff5000;
+    text-shadow: none
+  }
+
+  .header .list,
+  .header .volumn {
+    float: right
+  }
+
+  .com-footer-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 0 23px
+  }
+
+  .com-footer-wrap .com-footer {
+    text-align: center
+  }
+
+  .com-footer-wrap .com-footer .list {
+    position: relative;
+    display: inline-block;
+    height: 17px;
+    text-align: center;
+    line-height: 17px
+  }
+
+  .com-footer-wrap .com-footer .list .item {
+    display: inline-block;
+    float: none;
+    width: 98px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .5)
+  }
+
+  .com-footer-wrap .com-footer .info-1,
+  .com-footer-wrap .com-footer .info-1 .police-link,
+  .com-footer-wrap .com-footer .info-2,
+  .com-footer-wrap .com-footer .info-2 .police-link {
+    color: #fff
+  }
+
+  @media (max-width:1440px) {
+    .header .logo img {
+      width: 210.7px;
+      height: 45.7px
+    }
+
+    .header .list .item:not(:last-child) {
+      margin-left: 45px
+    }
+
+    .header .list .down-item {
+      width: 108px
+    }
+
+    .main-content .azy-slogan {
+      font-size: 45px;
+      line-height: 65px;
+      margin-bottom: 16.2px
+    }
+
+    .main-content .qr-code {
+      width: 123.3px;
+      margin-right: 26px
+    }
+
+    .main-content .qr-code .image {
+      height: 126px
+    }
+
+    .main-content .btn-wrap .btn {
+      width: 171px;
+      height: 52.2px
+    }
+
+    .main-content .btn-wrap .btn:first-child {
+      margin-bottom: 21.6px
+    }
+
+    .com-footer-wrap .com-footer .list .item {
+      width: 73px
+    }
+  }
+
+  @media (min-width:1700px) {
+    .header .list .item .nav {
+      font-size: 16px;
+      line-height: 22px
+    }
+
+    .header .list .down-item li div {
+      font-size: 16px
+    }
+
+    .header .list .down-item .complain .content {
+      width: 300px
+    }
+
+    .header .list .down-item .complain .content .line {
+      font-size: 16px
+    }
+
+    .header .list .down-item .complain .content .line.bold {
+      font-size: 18px
+    }
+
+    .header .list .down-item .complain .content .line a {
+      line-height: 14px;
+      font-size: 14px
+    }
+
+    .com-footer-wrap .com-footer .info a,
+    .com-footer-wrap .com-footer .info span,
+    .com-footer-wrap .com-footer .list .item {
+      font-size: 14px
+    }
+  }
+/* 回到顶部 */
+    .header  .backtop{
+        position: fixed;
+        top: calc(100vh - 180px);
+        right: 80px;
+        width: 44px;
+        height: 44px;
+        background: url(https://www.aizhiyi.com/mobile/image/back_to_top.png) center center no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        display: none;
+    }
+    .header  .backtop .text{
+        display: none;
+        width: 24px;
+        text-align: center;
+        font-size: 12px;
+        color: #FFFFFF;
+        line-height: 14px;
+        padding: 8px 10px;
+    }
+    .header  .backtop:hover{
+        background: #7A9AFF;
+        border-radius: 44px;
+    }
+    .header  .backtop:hover .text {
+        display: block;
+    }
